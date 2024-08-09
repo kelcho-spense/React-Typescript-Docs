@@ -1,0 +1,107 @@
+[
+    {
+        "id": 1,
+        "joke": "Why don't scientists trust atoms? Because they make up everything!",
+        "rating": 4
+    },
+    {
+        "id": 2,
+        "joke": "What's a programmer's favorite place? The Foo Bar!",
+        "rating": 4
+    },
+    {
+        "id": 3,
+        "joke": "Parallel lines have so much in common. It's a shame they'll never meet.",
+        "rating": 4
+    },
+    {
+        "id": 4,
+        "joke": "What do you call a fake noodle? An Impasta.",
+        "rating": 3
+    },
+    {
+        "id": 5,
+        "joke": "What did the pirate say on his 80th birthday? Aye Matey!",
+        "rating": 3
+    },
+    {
+        "id": 6,
+        "joke": "What's the best part about living in Switzerland? I don't know, but the flag is a big plus.",
+        "rating": 2
+    },
+    {
+        "id": 7,
+        "joke": "Did you hear about the mathematician who's afraid of negative numbers? He'll stop at nothing to avoid them!",
+        "rating": 2
+    },
+    {
+        "id": 8,
+        "joke": "Why do we tell actors to break a leg? Because every play has a cast.",
+        "rating": 1
+    },
+    {
+        "id": 9,
+        "joke": "Helvetica and Times New Roman walk into a bar. 'Get out of here!' shouts the bartender. 'We don't serve your type.'",
+        "rating": 1
+    },
+    {
+        "id": 10,
+        "joke": "Yesterday I saw a guy spill all his Scrabble letters on the road. I asked him, 'What's the word on the street?'",
+        "rating": 0
+    },
+    {
+        "id": 11,
+        "joke": "Hear about the new restaurant called Karma? There’s no menu: You get what you deserve.",
+        "rating": 0
+    },
+    {
+        "id": 12,
+        "joke": "Did you hear about the actor who fell through the floorboards? He was just going through a stage.",
+        "rating": 1
+    },
+    {
+        "id": 13,
+        "joke": "Did you hear about the claustrophobic astronaut? He just needed a little space.",
+        "rating": 1
+    },
+    {
+        "id": 14,
+        "joke": "Why don't scientists trust atoms? Because they make up everything!",
+        "rating": 1
+    },
+    {
+        "id": 15,
+        "joke": "What's a programmer's favorite place? The Foo Bar!",
+        "rating": 2
+    },
+    {
+        "id": 16,
+        "joke": "Parallel lines have so much in common. It's a shame they'll never meet.",
+        "rating": 2
+    },
+    {
+        "id": 17,
+        "joke": "What do you call a fake noodle? An Impasta.",
+        "rating": 3
+    },
+    {
+        "id": 18,
+        "joke": "What did the pirate say on his 80th birthday? Aye Matey!",
+        "rating": 3
+    },
+    {
+        "id": 19,
+        "joke": "What's the best part about living in Switzerland? I don't know, but the flag is a big plus.",
+        "rating": 4
+    },
+    {
+        "id": 20,
+        "joke": "Did you hear about the mathematician who's afraid of negative numbers? He'll stop at nothing to avoid them!",
+        "rating": 4
+    },
+    {
+        "id": 21,
+        "joke": "Why do we tell actors to break a leg? Because every play has a cast.",
+        "rating": 5
+    }
+]

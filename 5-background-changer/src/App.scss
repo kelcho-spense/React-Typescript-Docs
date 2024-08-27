@@ -1,0 +1,12 @@
+.app {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(87, 33, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .buttons{
+    display: flex;
+    gap: 3rem;
+  }
+}

@@ -1,0 +1,3 @@
+# Setting up a React project with Create React App (CRA) or Vite
+
+Start typing here...

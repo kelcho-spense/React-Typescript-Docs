@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="r"
+                 name="React-TypeScript"
+                 start-page="tutorial.md">
+
+    <toc-element topic="tutorial.md" toc-title="🎇 Course Outline">
+    </toc-element>
+    <toc-element topic="Introduction-to-ReactTopic.md">
+        <toc-element topic="Overview-of-React.md"/>
+        <toc-element topic="Benefits-of-using-React.md"/>
+        <toc-element topic="Introduction-to-TypeScript-in-React.md"/>
+        <toc-element topic="Setting-up-the-Development-Environment.md">
+            <toc-element topic="Installing-Node-js-and-npm.md"/>
+            <toc-element topic="Configuring-TypeScript-in-a-React-Project.md"/>
+            <toc-element topic="Setting-up-a-React-project-with-Create-React-App-CRA-or-Vite.md"/>
+        </toc-element>
+    </toc-element>
+    <toc-element topic="2-Core-Concepts.md">
+        <toc-element topic="JSX-Props.md">
+            <toc-element topic="What-is-JSX.md">
+            </toc-element>
+            <toc-element topic="Embedding-JavaScript-in-JSX.md"/>
+            <toc-element topic="Passing-Props-to-Components.md"/>
+            <toc-element topic="Using-Props-for-Reusable-Components.md"/>
+        </toc-element>
+        <toc-element topic="Components-in-React.md">
+            <toc-element topic="Functional-vs-Class-Components.md"/>
+            <toc-element topic="Creating-Components-with-TypeScript.md"/>
+            <toc-element topic="Default-and-Named-Exports.md"/>
+            <toc-element topic="Rendering-Components.md"/>
+        </toc-element>
+    </toc-element>
+</instance-profile>

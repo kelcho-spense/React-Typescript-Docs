@@ -19,10 +19,10 @@
       ```
   The mockup looks like this:
 
-![product page.png](product page.png)
+![product page](product page.png)
 
 2. There are five components on this screen:
- ![products page decoupled.png](products_page_decoupled.png)
+ ![products page decoupled](products_page_decoupled.png)
    - FilterableProductTable (grey) contains the entire app.
    - SearchBar (blue) receives the user input.
    - ProductTable (lavender) displays and filters the list according to the user input.

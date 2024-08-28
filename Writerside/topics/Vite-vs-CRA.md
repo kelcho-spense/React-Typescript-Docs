@@ -1,5 +1,6 @@
 # Vite vs CRA
 
+![Vite Vs CRA](vite.png)
 The preferred way between **Create React App (CRA)** and **Vite** depends on your specific needs and preferences:
 In summary, if you prioritize ease of use and community support, go with CRA. If you want faster builds and a modern toolchain, Vite is likely the better option.
 

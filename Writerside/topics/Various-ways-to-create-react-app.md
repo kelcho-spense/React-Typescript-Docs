@@ -1,6 +1,6 @@
 # Various ways to create react app
 
-![ways to create react app.png](ways to create react app.png)
+![ways to create react app](ways to create react app.png)
 
 Here are several ways to create a React app, each associated with the tools or frameworks shown in the image:
 

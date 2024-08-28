@@ -1,7 +1,8 @@
 # Introduction to TypeScript in React
 
 
-![React TypeScript.png](React_TypeScript.png)
+![React TypeScript](React_TypeScript.png)
+
 TypeScript is a statically typed superset of JavaScript that provides better tooling and helps catch errors early during development. Using TypeScript with React improves code quality and readability, especially in large projects.
 
 ## Using TypeScript
@@ -28,6 +29,6 @@ export default function MyApp() {
   );
 }
 ```
-![Ts button.png](Ts_button.png)
+![Ts button](Ts_button.png)
 
 

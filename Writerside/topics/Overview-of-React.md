@@ -12,7 +12,7 @@ Before you start, you should have a basic understanding of:
 6. [x] What is npm
 
 ## What is React?
-![react.png](react.png)
+![react](react.png)
 
 - React, sometimes referred to as a frontend JavaScript framework, is a JavaScript library created by Facebook.
 - React is a tool for building UI components.

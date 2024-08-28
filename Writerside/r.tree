@@ -36,31 +36,22 @@
             </toc-element>
             <toc-element topic="Pure-and-inpure-Components.md"/>
         </toc-element>
+        <toc-element topic="react-data-flow.md"/>
     </toc-element>
-    <toc-element topic="react-data-flow.md"/>
     <toc-element topic="3-State-ManagementTopic.md">
         <toc-element topic="useState-Hook.md">
-            <toc-element topic="Introduction-to-useState.md"/>
-            <toc-element topic="Managing-State-in-Functional-Components.md">
-            </toc-element>
-            <toc-element topic="Example-Managing-Form-Inputs.md"/>
         </toc-element>
         <toc-element topic="useReducer-Hook.md">
-            <toc-element topic="Introduction-to-useReducer.md"/>
-            <toc-element topic="Complex-State-Management.md"/>
-            <toc-element topic="Example-Building-a-Counter-with-useReducer.md"/>
         </toc-element>
     </toc-element>
-    <toc-element topic="4-Intermediate-React-Concepts.md">
-        <toc-element topic="Handling-Events.md">
-            <toc-element topic="Event-Handling-in-React.md"/>
-            <toc-element topic="Passing-Parameters-to-Event-Handlers.md"/>
-            <toc-element topic="Common-Event-Handlers-e-g-onClick-onChange-onSubmit.md"/>
-        </toc-element>
-        <toc-element topic="Conditional-Rendering.md">
-            <toc-element topic="Using-Ternary-Operators-for-Conditional-RenderingTopic.md"/>
-            <toc-element topic="Best-Practices-for-Conditional-Rendering.md"/>
-        </toc-element>
+    <toc-element topic="Handling-Events.md">
+        <toc-element topic="Event-Handling-in-React.md"/>
+        <toc-element topic="Passing-Parameters-to-Event-Handlers.md"/>
+        <toc-element topic="Common-Event-Handlers-e-g-onClick-onChange-onSubmit.md"/>
+    </toc-element>
+    <toc-element topic="Conditional-Rendering.md">
+        <toc-element topic="Using-Ternary-Operators-for-Conditional-RenderingTopic.md"/>
+        <toc-element topic="Best-Practices-for-Conditional-Rendering.md"/>
     </toc-element>
     <toc-element topic="5-Hooks-in-React.md">
         <toc-element topic="Introduction-to-Hooks.md">
@@ -120,6 +111,7 @@
         </toc-element>
         <toc-element topic="Avoiding-Common-Mistakes.md"/>
     </toc-element>
+    <toc-element topic="12-React-Folder-Structure.md"/>
     <toc-element topic="12-Advanced-State-Management-with-Redux-Toolkit.md">
         <toc-element topic="Introduction-to-Redux.md">
             <toc-element topic="Centralized-State-Management.md"/>

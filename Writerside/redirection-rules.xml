@@ -47,4 +47,34 @@
         <description>Created after removal of "Rendering Components" from React-TypeScript</description>
         <accepts>Rendering-Components.html</accepts>
     </rule>
+    <rule id="37851251">
+        <description>Created after removal of "Introduction to useState" from React-TypeScript</description>
+        <accepts>Introduction-to-useState.html</accepts>
+    </rule>
+    <rule id="3ff73f4b">
+        <description>Created after removal of "Example: Managing Form Inputs" from React-TypeScript</description>
+        <accepts>Example-Managing-Form-Inputs.html</accepts>
+    </rule>
+    <rule id="6bd2bbf9">
+        <description>Created after removal of "Managing State in Functional Components" from React-TypeScript
+        </description>
+        <accepts>Managing-State-in-Functional-Components.html</accepts>
+    </rule>
+    <rule id="282f0ad2">
+        <description>Created after removal of "Introduction to useReducer" from React-TypeScript</description>
+        <accepts>Introduction-to-useReducer.html</accepts>
+    </rule>
+    <rule id="2c201096">
+        <description>Created after removal of "Complex State Management" from React-TypeScript</description>
+        <accepts>Complex-State-Management.html</accepts>
+    </rule>
+    <rule id="46305f2f">
+        <description>Created after removal of "Example: Building a Counter with useReducer" from React-TypeScript
+        </description>
+        <accepts>Example-Building-a-Counter-with-useReducer.html</accepts>
+    </rule>
+    <rule id="5d9ab9f0">
+        <description>Created after removal of "4. Intermediate React Concepts" from React-TypeScript</description>
+        <accepts>4-Intermediate-React-Concepts.html</accepts>
+    </rule>
 </rules>

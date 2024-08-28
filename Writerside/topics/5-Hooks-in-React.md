@@ -1,3 +1,3 @@
-# 5. Hooks in React
+# 6. More Hooks
 
 Start typing here...

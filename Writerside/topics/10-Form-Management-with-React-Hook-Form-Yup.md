@@ -1,3 +1,3 @@
-# 9. Form Management with React Hook Form & Yup
+# 10. Form Management with React Hook Form & Zod
 
 Start typing here...

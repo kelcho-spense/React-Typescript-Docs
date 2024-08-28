@@ -1,3 +1,3 @@
-# 6. Custom Hooks
+# 7. Custom Hooks
 
 Start typing here...

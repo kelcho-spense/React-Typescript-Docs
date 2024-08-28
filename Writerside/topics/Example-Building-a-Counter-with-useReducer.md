@@ -1,3 +1,0 @@
-# Example: Building a Counter with useReducer
-
-Start typing here...

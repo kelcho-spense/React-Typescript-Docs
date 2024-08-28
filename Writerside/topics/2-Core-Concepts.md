@@ -1,3 +1,3 @@
-# 2.Core Concepts
+# 2. Core Concepts
 
 Start typing here...

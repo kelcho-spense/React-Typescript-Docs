@@ -12,12 +12,13 @@
         <toc-element topic="Overview-of-React.md"/>
         <toc-element topic="Benefits-of-using-React.md"/>
         <toc-element topic="Introduction-to-TypeScript-in-React.md"/>
+        <toc-element topic="React-Concepts.md"/>
         <toc-element topic="Setting-up-the-Development-Environment.md">
             <toc-element topic="Installing-Node-js-and-npm.md"/>
-            <toc-element topic="Configuring-TypeScript-in-a-React-Project.md"/>
-            <toc-element topic="Setting-up-a-React-project-with-Create-React-App-CRA-or-Vite.md"/>
+            <toc-element topic="PnPm-Cheatsheet.md"/>
         </toc-element>
     </toc-element>
+    <toc-element topic="Setting-up-a-React-project-with-Create-React-App-CRA-or-Vite.md"/>
     <toc-element topic="2-Core-Concepts.md">
         <toc-element topic="JSX-Props.md">
             <toc-element topic="What-is-JSX.md">
@@ -33,4 +34,101 @@
             <toc-element topic="Rendering-Components.md"/>
         </toc-element>
     </toc-element>
+    <toc-element topic="3-State-ManagementTopic.md">
+        <toc-element topic="useState-Hook.md">
+            <toc-element topic="Introduction-to-useState.md"/>
+            <toc-element topic="Managing-State-in-Functional-Components.md">
+            </toc-element>
+            <toc-element topic="Example-Managing-Form-Inputs.md"/>
+        </toc-element>
+        <toc-element topic="useReducer-Hook.md">
+            <toc-element topic="Introduction-to-useReducer.md"/>
+            <toc-element topic="Complex-State-Management.md"/>
+            <toc-element topic="Example-Building-a-Counter-with-useReducer.md"/>
+        </toc-element>
+    </toc-element>
+    <toc-element topic="4-Intermediate-React-Concepts.md">
+        <toc-element topic="Handling-Events.md">
+            <toc-element topic="Event-Handling-in-React.md"/>
+            <toc-element topic="Passing-Parameters-to-Event-Handlers.md"/>
+            <toc-element topic="Common-Event-Handlers-e-g-onClick-onChange-onSubmit.md"/>
+        </toc-element>
+        <toc-element topic="Rendering-Lists.md">
+            <toc-element topic="Mapping-Data-to-Components.md"/>
+            <toc-element topic="Understanding-Keys-in-React.md"/>
+            <toc-element topic="Handling-Dynamic-Lists.md"/>
+        </toc-element>
+        <toc-element topic="Conditional-Rendering.md">
+            <toc-element topic="Using-Ternary-Operators-for-Conditional-RenderingTopic.md"/>
+            <toc-element topic="Best-Practices-for-Conditional-Rendering.md"/>
+        </toc-element>
+    </toc-element>
+    <toc-element topic="5-Hooks-in-React.md">
+        <toc-element topic="Introduction-to-Hooks.md">
+            <toc-element topic="What-are-Hooks.md"/>
+            <toc-element topic="Rules-of-Hooks.md"/>
+        </toc-element>
+        <toc-element topic="useEffect-Hook.md">
+            <toc-element topic="Synchronizing-with-External-Systems.md"/>
+            <toc-element topic="Fetching-Data-with-useEffect.md"/>
+            <toc-element topic="Dependency-Arrays.md"/>
+        </toc-element>
+        <toc-element topic="useRef-Hook.md">
+            <toc-element topic="Managing-DOM-References.md"/>
+            <toc-element topic="Persisting-Values-Across-Renders.md"/>
+            <toc-element topic="Example-Counting-Renders.md"/>
+        </toc-element>
+    </toc-element>
+    <toc-element topic="6-Custom-Hooks.md">
+        <toc-element topic="Introduction-to-Custom-Hooks.md"/>
+        <toc-element topic="Creating-a-Custom-Hook.md">
+            <toc-element topic="Example-useLocalStorage-Hook.md">
+            </toc-element>
+            <toc-element topic="Example-useFetch-Hook.md"/>
+        </toc-element>
+    </toc-element>
+    <toc-element topic="7-Performance-Optimization.md">
+        <toc-element topic="Memoization-in-React.md">
+            <toc-element topic="What-is-Memoization.md"/>
+            <toc-element topic="useCallback-Hook.md"/>
+            <toc-element topic="useMemo-Hook.md"/>
+            <toc-element topic="React-memo-for-Component-Optimization.md"/>
+        </toc-element>
+        <toc-element topic="Avoiding-Prop-Drilling.md">
+            <toc-element topic="Issues-with-Prop-Drilling.md"/>
+            <toc-element topic="Solutions-Context-API-Redux-Component-Composition.md"/>
+        </toc-element>
+    </toc-element>
+    <toc-element topic="8-Routing-with-React-Router.md">
+        <toc-element topic="Setting-Up-React-Router.md"/>
+        <toc-element topic="Basic-Routing-Concepts.md"/>
+        <toc-element topic="Nested-Routes-and-URL-Parameters.md"/>
+        <toc-element topic="Route-Protection-with-Private-Routes.md">
+        </toc-element>
+        <toc-element topic="Handling-404-Pages.md"/>
+    </toc-element>
+    <toc-element topic="10-Form-Management-with-React-Hook-Form-Yup.md">
+        <toc-element topic="Why-Use-React-Hook-Form.md">
+        </toc-element>
+        <toc-element topic="Setting-Up-React-Hook-Form.md"/>
+        <toc-element topic="Handling-Form-Validation-with-Yup.md"/>
+    </toc-element>
+    <toc-element topic="10-React-Styling.md"/>
+    <toc-element topic="11-Best-Practices-and-Common-Pitfalls.md">
+        <toc-element topic="Code-Structuring.md">
+            <toc-element topic="Organizing-Files-and-Folders.md"/>
+            <toc-element topic="Naming-Conventions-and-Best-Practices.md"/>
+        </toc-element>
+        <toc-element topic="Avoiding-Common-Mistakes.md"/>
+    </toc-element>
+    <toc-element topic="12-Advanced-State-Management-with-Redux-Toolkit.md">
+        <toc-element topic="Introduction-to-Redux.md">
+            <toc-element topic="Centralized-State-Management.md"/>
+            <toc-element topic="Benefits-of-Redux.md"/>
+        </toc-element>
+        <toc-element topic="Setting-Up-Redux-Toolkit.md"/>
+        <toc-element topic="Handling-Asynchronous-Actions.md"/>
+        <toc-element topic="RTK-Query-for-Data-Fetching.md"/>
+    </toc-element>
+    <toc-element topic="all.md"/>
 </instance-profile>

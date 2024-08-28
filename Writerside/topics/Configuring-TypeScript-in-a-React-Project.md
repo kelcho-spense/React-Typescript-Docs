@@ -1,3 +1,0 @@
-# Configuring TypeScript in a React Project
-
-Start typing here...

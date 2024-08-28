@@ -1,0 +1,3 @@
+# Avoiding Common Mistakes
+
+Start typing here...

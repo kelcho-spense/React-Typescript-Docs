@@ -1,0 +1,3 @@
+# Common Event Handlers (e.g., onClick, onChange, onSubmit)
+
+Start typing here...

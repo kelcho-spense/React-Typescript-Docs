@@ -1,3 +1,2 @@
-# 1.Introduction to ReactTopic
-
-Start typing here...
+# 1. Intro to React
+![React TypeScript.png](React_TypeScript.png)

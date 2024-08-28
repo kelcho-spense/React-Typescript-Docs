@@ -20,12 +20,12 @@ Before you start, you should have a basic understanding of:
 
 ## What is React used for?
 
-1. Web development : 
+1. **Web development :** 
    - This is where React got its start and where you’ll find it used most often. React is component-based. An example of a component could be a form or even just a form field or button on a website. In React, you build up complete applications using components like these by nesting them.
    - Components in React can manage their own state and communicate that state to child components. By “state,” we mean the data that populates the web application.
-2. Mobile app development :
+2. **Mobile app development :**
    - React Native is a JavaScript framework that uses React. With React Native, developers can apply web-based React principles to creating mobile apps for Android and iOS. Here, React is used to connect the mobile user interface of the application to the phone’s operating system.
-3. Desktop app development : 
+3. **Desktop app development :** 
    - Developers can also use React with Electron, another JavaScript library, to create cross-platform desktop apps. Some apps you may know about that are built with Electron include Visual Studio Code, Slack, Skype, Discord, WhatsApp, and WordPress Desktop.
 
 ## React.JS History

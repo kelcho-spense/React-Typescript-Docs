@@ -1,3 +1,0 @@
-# Embedding JavaScript in JSX
-
-Start typing here...

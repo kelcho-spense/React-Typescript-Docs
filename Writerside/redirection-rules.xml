@@ -15,4 +15,36 @@
         </description>
         <accepts>Configuring-TypeScript-in-a-React-Project.html</accepts>
     </rule>
+    <rule id="29a51d71">
+        <description>Created after removal of "Creating Components with TypeScript" from React-TypeScript</description>
+        <accepts>Creating-Components-with-TypeScript.html</accepts>
+    </rule>
+    <rule id="2f1a8e62">
+        <description>Created after removal of "What is JSX?" from React-TypeScript</description>
+        <accepts>What-is-JSX.html</accepts>
+    </rule>
+    <rule id="70938368">
+        <description>Created after removal of "Embedding JavaScript in JSX" from React-TypeScript</description>
+        <accepts>Embedding-JavaScript-in-JSX.html</accepts>
+    </rule>
+    <rule id="3553692b">
+        <description>Created after removal of "Handling Dynamic Lists" from React-TypeScript</description>
+        <accepts>Handling-Dynamic-Lists.html</accepts>
+    </rule>
+    <rule id="fa81508">
+        <description>Created after removal of "Understanding Keys in React" from React-TypeScript</description>
+        <accepts>Understanding-Keys-in-React.html</accepts>
+    </rule>
+    <rule id="e188bc7">
+        <description>Created after removal of "Mapping Data to Components" from React-TypeScript</description>
+        <accepts>Mapping-Data-to-Components.html</accepts>
+    </rule>
+    <rule id="38dd06c4">
+        <description>Created after removal of "Default and Named Exports" from React-TypeScript</description>
+        <accepts>Default-and-Named-Exports.html</accepts>
+    </rule>
+    <rule id="7beb7fea">
+        <description>Created after removal of "Rendering Components" from React-TypeScript</description>
+        <accepts>Rendering-Components.html</accepts>
+    </rule>
 </rules>

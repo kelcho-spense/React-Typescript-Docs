@@ -1,3 +1,0 @@
-# Handling Dynamic Lists
-
-Start typing here...

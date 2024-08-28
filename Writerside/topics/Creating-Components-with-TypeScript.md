@@ -1,3 +1,0 @@
-# Creating Components with TypeScript
-
-Start typing here...

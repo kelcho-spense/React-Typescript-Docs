@@ -13,3 +13,5 @@ You can install Yarn using npm ;-)
 
 **3. PNPM** :
 (performant NPM), a fast, disk space efficient package manager. Is focused on performance and efficiency and is designed to save disk space. 
+
+![npm yarn pnpm commands.png](npm yarn pnpm commands.png)

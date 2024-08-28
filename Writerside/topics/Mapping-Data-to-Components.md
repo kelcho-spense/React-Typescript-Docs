@@ -1,3 +1,0 @@
-# Mapping Data to Components
-
-Start typing here...

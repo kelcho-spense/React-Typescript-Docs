@@ -1,3 +1,0 @@
-# Understanding Keys in React
-
-Start typing here...

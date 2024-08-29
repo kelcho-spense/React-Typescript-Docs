@@ -1,7 +1,7 @@
 # Course Outline : React with TypeScript Documentation
 
-<title instance="r">Course Outline: React with TypeScript Documentation</title>
-Here is the course outline for a React.js and TypeScript documentation written in Markdown (.md) format:
+**Course Outline**: React with TypeScript Documentation
+Here is the course outline for a React.js and TypeScript documentation
 
 #### **1. Introduction to React**
 - Overview of React

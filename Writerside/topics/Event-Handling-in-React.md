@@ -1,3 +1,0 @@
-# Event Handling in React
-
-Start typing here...

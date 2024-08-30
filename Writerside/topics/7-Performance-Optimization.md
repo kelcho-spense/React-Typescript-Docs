@@ -1,3 +1,3 @@
-# 8. Performance Optimization Hooks
+# 9. Performance Optimization Hooks
 
 Start typing here...

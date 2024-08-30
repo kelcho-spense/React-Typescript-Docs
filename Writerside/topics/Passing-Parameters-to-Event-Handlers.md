@@ -1,3 +1,0 @@
-# Passing Parameters to Event Handlers
-
-Start typing here...

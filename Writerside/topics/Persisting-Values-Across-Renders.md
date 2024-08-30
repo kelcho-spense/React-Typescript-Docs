@@ -1,3 +1,0 @@
-# Persisting Values Across Renders
-
-Start typing here...

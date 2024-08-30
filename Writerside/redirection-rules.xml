@@ -77,4 +77,69 @@
         <description>Created after removal of "4. Intermediate React Concepts" from React-TypeScript</description>
         <accepts>4-Intermediate-React-Concepts.html</accepts>
     </rule>
+    <rule id="7e522038">
+        <description>Created after removal of "Event Handling in React" from React-TypeScript</description>
+        <accepts>Event-Handling-in-React.html</accepts>
+    </rule>
+    <rule id="60fc55aa">
+        <description>Created after removal of "Passing Parameters to Event Handlers" from React-TypeScript</description>
+        <accepts>Passing-Parameters-to-Event-Handlers.html</accepts>
+    </rule>
+    <rule id="58f84d48">
+        <description>Created after removal of "Common Event Handlers (e.g., onClick, onChange, onSubmit)" from
+            React-TypeScript
+        </description>
+        <accepts>Common-Event-Handlers-e-g-onClick-onChange-onSubmit.html</accepts>
+    </rule>
+    <rule id="2e619caf">
+        <description>Created after removal of "Using Ternary Operators for Conditional RenderingTopic" from
+            React-TypeScript
+        </description>
+        <accepts>Using-Ternary-Operators-for-Conditional-RenderingTopic.html</accepts>
+    </rule>
+    <rule id="437a8fe0">
+        <description>Created after removal of "Best Practices for Conditional Rendering" from React-TypeScript
+        </description>
+        <accepts>Best-Practices-for-Conditional-Rendering.html</accepts>
+    </rule>
+    <rule id="5013021">
+        <description>Created after removal of "Introduction to Hooks" from React-TypeScript</description>
+        <accepts>Introduction-to-Hooks.html</accepts>
+    </rule>
+    <rule id="3858b0d2">
+        <description>Created after removal of "What are Hooks?" from React-TypeScript</description>
+        <accepts>What-are-Hooks.html</accepts>
+    </rule>
+    <rule id="17f85ad0">
+        <description>Created after removal of "Rules of Hooks" from React-TypeScript</description>
+        <accepts>Rules-of-Hooks.html</accepts>
+    </rule>
+    <rule id="129c6a99">
+        <description>Created after removal of "6. More Hooks" from React-TypeScript</description>
+        <accepts>5-Hooks-in-React.html</accepts>
+    </rule>
+    <rule id="365c19c6">
+        <description>Created after removal of "Synchronizing with External Systems" from React-TypeScript</description>
+        <accepts>Synchronizing-with-External-Systems.html</accepts>
+    </rule>
+    <rule id="dac7936">
+        <description>Created after removal of "Fetching Data with useEffect" from React-TypeScript</description>
+        <accepts>Fetching-Data-with-useEffect.html</accepts>
+    </rule>
+    <rule id="73715fee">
+        <description>Created after removal of "Dependency Arrays" from React-TypeScript</description>
+        <accepts>Dependency-Arrays.html</accepts>
+    </rule>
+    <rule id="49d311f6">
+        <description>Created after removal of "Managing DOM References" from React-TypeScript</description>
+        <accepts>Managing-DOM-References.html</accepts>
+    </rule>
+    <rule id="23277c4a">
+        <description>Created after removal of "Persisting Values Across Renders" from React-TypeScript</description>
+        <accepts>Persisting-Values-Across-Renders.html</accepts>
+    </rule>
+    <rule id="330ed0df">
+        <description>Created after removal of "Example: Counting Renders" from React-TypeScript</description>
+        <accepts>Example-Counting-Renders.html</accepts>
+    </rule>
 </rules>

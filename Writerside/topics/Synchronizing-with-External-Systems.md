@@ -1,3 +1,0 @@
-# Synchronizing with External Systems
-
-Start typing here...

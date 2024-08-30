@@ -1,3 +1,0 @@
-# Example: Counting Renders
-
-Start typing here...

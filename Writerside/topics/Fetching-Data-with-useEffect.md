@@ -1,3 +1,0 @@
-# Fetching Data with useEffect
-
-Start typing here...

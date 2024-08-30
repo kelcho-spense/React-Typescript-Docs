@@ -45,29 +45,12 @@
         </toc-element>
     </toc-element>
     <toc-element topic="Handling-Events.md">
-        <toc-element topic="Event-Handling-in-React.md"/>
-        <toc-element topic="Passing-Parameters-to-Event-Handlers.md"/>
-        <toc-element topic="Common-Event-Handlers-e-g-onClick-onChange-onSubmit.md"/>
     </toc-element>
     <toc-element topic="Conditional-Rendering.md">
-        <toc-element topic="Using-Ternary-Operators-for-Conditional-RenderingTopic.md"/>
-        <toc-element topic="Best-Practices-for-Conditional-Rendering.md"/>
     </toc-element>
-    <toc-element topic="5-Hooks-in-React.md">
-        <toc-element topic="Introduction-to-Hooks.md">
-            <toc-element topic="What-are-Hooks.md"/>
-            <toc-element topic="Rules-of-Hooks.md"/>
-        </toc-element>
-        <toc-element topic="useEffect-Hook.md">
-            <toc-element topic="Synchronizing-with-External-Systems.md"/>
-            <toc-element topic="Fetching-Data-with-useEffect.md"/>
-            <toc-element topic="Dependency-Arrays.md"/>
-        </toc-element>
-        <toc-element topic="useRef-Hook.md">
-            <toc-element topic="Managing-DOM-References.md"/>
-            <toc-element topic="Persisting-Values-Across-Renders.md"/>
-            <toc-element topic="Example-Counting-Renders.md"/>
-        </toc-element>
+    <toc-element topic="useEffect-Hook.md">
+    </toc-element>
+    <toc-element topic="useRef-Hook.md">
     </toc-element>
     <toc-element topic="6-Custom-Hooks.md">
         <toc-element topic="Introduction-to-Custom-Hooks.md"/>

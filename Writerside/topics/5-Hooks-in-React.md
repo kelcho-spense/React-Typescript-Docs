@@ -1,3 +1,5 @@
 # 6. More Hooks
 
-Start typing here...
+# What are Hooks?
+
+# Rules of Hooks

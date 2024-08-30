@@ -1,3 +1,0 @@
-# Introduction to Custom Hooks
-
-Start typing here...

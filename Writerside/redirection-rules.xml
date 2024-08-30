@@ -142,4 +142,20 @@
         <description>Created after removal of "Example: Counting Renders" from React-TypeScript</description>
         <accepts>Example-Counting-Renders.html</accepts>
     </rule>
+    <rule id="a56055d">
+        <description>Created after removal of "Example: useLocalStorage Hook" from React-TypeScript</description>
+        <accepts>Example-useLocalStorage-Hook.html</accepts>
+    </rule>
+    <rule id="3dffc129">
+        <description>Created after removal of "Example: useFetch Hook" from React-TypeScript</description>
+        <accepts>Example-useFetch-Hook.html</accepts>
+    </rule>
+    <rule id="5d57f907">
+        <description>Created after removal of "Creating a Custom Hook" from React-TypeScript</description>
+        <accepts>Creating-a-Custom-Hook.html</accepts>
+    </rule>
+    <rule id="1987319c">
+        <description>Created after removal of "Introduction to Custom Hooks" from React-TypeScript</description>
+        <accepts>Introduction-to-Custom-Hooks.html</accepts>
+    </rule>
 </rules>

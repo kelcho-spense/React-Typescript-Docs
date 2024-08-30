@@ -9,7 +9,7 @@ The `useEffect` hook is one of the most powerful and commonly used hooks in Reac
 
 ### Basic Example
 
-```tsx
+```typescript
 import React, { useState, useEffect } from 'react';
 
 const ExampleComponent: React.FC = () => {
@@ -40,7 +40,7 @@ export default ExampleComponent;
 
 ### Example: Synchronizing with an External System
 
-```tsx
+```typescript
 import React, { useState, useEffect } from 'react';
 
 const Clock: React.FC = () => {
@@ -71,7 +71,7 @@ One of the most common use cases for `useEffect` is fetching data from an API wh
 
 ### Example: Fetching Data on Component Mount
 
-```tsx
+```typescript
 import React, { useState, useEffect } from 'react';
 
 interface Data {
@@ -140,7 +140,7 @@ The dependency array in `useEffect` determines when the effect runs. Understandi
 
 ### Example: Using Dependency Arrays
 
-```tsx
+```typescript
 import React, { useState, useEffect } from 'react';
 
 const DependencyExample: React.FC = () => {
@@ -185,7 +185,7 @@ export default DependencyExample;
 
 ### Example: Avoiding Unnecessary Renders with `useCallback`
 
-```tsx
+```typescript
 import React, { useState, useEffect, useCallback } from 'react';
 
 const MemoizedFunctionExample: React.FC = () => {

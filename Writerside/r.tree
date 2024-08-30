@@ -53,12 +53,6 @@
     <toc-element topic="useRef-Hook.md">
     </toc-element>
     <toc-element topic="6-Custom-Hooks.md">
-        <toc-element topic="Introduction-to-Custom-Hooks.md"/>
-        <toc-element topic="Creating-a-Custom-Hook.md">
-            <toc-element topic="Example-useLocalStorage-Hook.md">
-            </toc-element>
-            <toc-element topic="Example-useFetch-Hook.md"/>
-        </toc-element>
     </toc-element>
     <toc-element topic="7-Performance-Optimization.md">
         <toc-element topic="Memoization-in-React.md">

@@ -1,3 +1,0 @@
-# React.memo for Component Optimization
-
-Start typing here...

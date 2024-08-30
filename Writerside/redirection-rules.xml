@@ -158,4 +158,31 @@
         <description>Created after removal of "Introduction to Custom Hooks" from React-TypeScript</description>
         <accepts>Introduction-to-Custom-Hooks.html</accepts>
     </rule>
+    <rule id="2bdaf9e7">
+        <description>Created after removal of "Solutions: Context API, Redux, Component Composition" from
+            React-TypeScript
+        </description>
+        <accepts>Solutions-Context-API-Redux-Component-Composition.html</accepts>
+    </rule>
+    <rule id="38f99d2c">
+        <description>Created after removal of "Issues with Prop Drilling" from React-TypeScript</description>
+        <accepts>Issues-with-Prop-Drilling.html</accepts>
+    </rule>
+    <rule id="62e7fbdb">
+        <description>Created after removal of "What is Memoization?" from React-TypeScript</description>
+        <accepts>What-is-Memoization.html</accepts>
+    </rule>
+    <rule id="73f0893d">
+        <description>Created after removal of "useCallback Hook" from React-TypeScript</description>
+        <accepts>useCallback-Hook.html</accepts>
+    </rule>
+    <rule id="16f05bb3">
+        <description>Created after removal of "useMemo Hook" from React-TypeScript</description>
+        <accepts>useMemo-Hook.html</accepts>
+    </rule>
+    <rule id="2af80493">
+        <description>Created after removal of "React.memo for Component Optimization" from React-TypeScript
+        </description>
+        <accepts>React-memo-for-Component-Optimization.html</accepts>
+    </rule>
 </rules>

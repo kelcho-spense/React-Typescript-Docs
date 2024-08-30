@@ -1,3 +1,0 @@
-# Solutions: Context API, Redux, Component Composition
-
-Start typing here...

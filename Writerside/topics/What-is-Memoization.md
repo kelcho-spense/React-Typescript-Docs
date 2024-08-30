@@ -1,3 +1,0 @@
-# What is Memoization?
-
-Start typing here...

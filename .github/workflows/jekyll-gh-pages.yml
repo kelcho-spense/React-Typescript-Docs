@@ -29,10 +29,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Remove existing webHelpIN2-all directory
-        run: rm -rf webHelpIN2-all
+      - name: Remove existing webHelpR2-all directory
+        run: rm -rf webHelpR2-all
 
-      - name: Unzip webHelpIN2-all.zip
+      - name: Unzip webHelpR2-all.zip
         run: unzip -o webHelpR2-all.zip -d webHelpR2-all
 
       - name: Setup Pages

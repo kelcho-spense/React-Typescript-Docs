@@ -30,10 +30,10 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Remove existing webHelpR2-all directory
-        run: rm -rf webHelpR2-all
+        run: rm -rf ./Writerside/webHelpR2-all
 
       - name: Unzip webHelpR2-all.zip
-        run: unzip -o webHelpR2-all.zip -d webHelpR2-all
+        run: unzip -o ./Writerside/webHelpR2-all.zip -d webHelpR2-all
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

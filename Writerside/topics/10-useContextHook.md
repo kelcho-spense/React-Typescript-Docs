@@ -2,13 +2,13 @@
 
 The `useContext` API in React is a hook that allows you to access the value of a context within a functional component. The Context API itself provides a way to share values (like data or functions) between components without having to pass props manually at every level of the component tree, thereby avoiding "prop drilling."
 
-### Why Use `useContext`?
+### Why Use useContext?
 
 - **Avoid Prop Drilling**: Instead of passing props down through several levels, you can place data in a context that any component can access directly.
 - **Global State Management**: It’s useful for managing state that needs to be accessible by multiple components across your application, such as user authentication status, theme settings, or language preferences.
 - **Cleaner Code**: By centralizing shared data, you can reduce the complexity of your component structure and make your codebase more maintainable.
 
-### Setting Up `useContext` API
+### Setting Up useContext API
 
 Setting up `useContext` involves creating a context, providing a value for that context, and then consuming that context value in your components. Here's how you can do it step by step:
 
@@ -165,7 +165,7 @@ Certainly! Let's explore how the `useContext` API can be combined with both `use
 
 ---
 
-## Example 1: `useContext` with `useState`
+## Example 1: useContext with useState
 
 ### Scenario: Managing User Authentication State
 
@@ -271,7 +271,7 @@ export default App;
 - **Context & State**: The `UserContext` provides a global state that holds the current user and two functions (`login` and `logout`) to update this state.
 - **Consuming the Context**: Components like `Navbar` and `LoginPage` consume the `UserContext` to access and modify the user state. This avoids prop drilling and makes the state easily accessible across the app.
 
-## Example 2: `useContext` with `useReducer`
+## Example 2: useContext with useReducer
 
 ### Scenario: Managing a Todo List with Complex State
 

@@ -41,11 +41,11 @@ console.log(memoizedCalculation(5)); // 10 (cached result, no computing)
 
 ### What is `useCallback`?
 
-`useCallback` is a React hook that returns a memoized version of a callback function. It is particularly useful when passing callbacks to child components that rely on reference equality to prevent unnecessary re-renders.
+`useCallback` is a React hook that returns a memoized version of a callback function. It's primarily used to optimize performance by preventing unnecessary re-renders in components that rely on reference equality, especially when passing callback functions to child components.
 
 ### Syntax
 
-```typescript
+```javascript
 const memoizedCallback = useCallback(
     () => {
         // Your callback logic here
@@ -54,38 +54,67 @@ const memoizedCallback = useCallback(
 );
 ```
 
-### Example: Preventing Unnecessary Re-renders
+### Detailed Example: Preventing Unnecessary Re-renders
 
-```typescript
+Let's build a more practical example where `useCallback` is essential. Imagine a scenario where you have a parent component that manages a list of items and a child component that adds a new item to that list.
+
+#### Example Code
+
+```Typescript
 import React, { useState, useCallback } from 'react';
 
-const ChildComponent: React.FC<{ onClick: () => void }> = React.memo(({ onClick }) => {
-    console.log('Child rendered');
-    return <button onClick={onClick}>Click me</button>;
+// Child component to add a new item
+const AddItem: React.FC<{ onAddItem: () => void }> = React.memo(({ onAddItem }) => {
+    console.log('AddItem rendered');
+    return <button onClick={onAddItem}>Add Item</button>;
 });
 
-const ParentComponent: React.FC = () => {
+// Parent component managing the list of items
+const ItemList: React.FC = () => {
+    const [items, setItems] = useState<string[]>([]);
     const [count, setCount] = useState(0);
 
-    const handleClick = useCallback(() => {
-        console.log('Button clicked');
-    }, []); // Empty dependency array means this callback won't change
+    // Memoized callback to add a new item to the list
+    const handleAddItem = useCallback(() => {
+        setItems((prevItems) => [...prevItems, `Item ${prevItems.length + 1}`]);
+    }, []); // Empty dependency array: this callback doesn't change
 
     return (
         <div>
             <p>Count: {count}</p>
-            <button onClick={() => setCount(count + 1)}>Increment</button>
-            <ChildComponent onClick={handleClick} />
+            <button onClick={() => setCount(count + 1)}>Increment Counter</button>
+            <AddItem onAddItem={handleAddItem} />
+            <ul>
+                {items.map((item, index) => (
+                    <li key={index}>{item}</li>
+                ))}
+            </ul>
         </div>
     );
 };
 
-export default ParentComponent;
+export default ItemList;
 ```
 
-### Explanation:
-- **Without `useCallback`**: Every time `ParentComponent` re-renders, `handleClick` would be recreated, causing `ChildComponent` to re-render even if it didn't need to.
-- **With `useCallback`**: `handleClick` is memoized and only recreated if its dependencies change. Since the dependencies are empty in this example, the function is not recreated, preventing unnecessary re-renders of `ChildComponent`.
+### Explanation
+
+- **Without `useCallback`:**
+    - If we did not use `useCallback` for `handleAddItem`, this function would be recreated every time `ItemList` re-renders, causing the `AddItem` component to re-render unnecessarily even if the function logic hasn't changed.
+
+- **With `useCallback`:**
+    - By wrapping `handleAddItem` in `useCallback`, we memoize the function, ensuring that it only gets recreated if its dependencies change. In this example, the dependencies array is empty, so `handleAddItem` is only created once and remains the same across re-renders of `ItemList`. This prevents unnecessary re-renders of `AddItem`, optimizing performance.
+
+### Practical Impact
+
+- **Performance Optimization:**
+    - This pattern is particularly useful in scenarios where the parent component re-renders frequently (e.g., due to state changes unrelated to the callback). By ensuring that the callback remains stable across renders, you avoid unnecessary re-rendering of child components that depend on that callback.
+
+- **Preventing Child Re-renders:**
+    - In the provided example, the `AddItem` component only re-renders if the `handleAddItem` callback changes. Because of `useCallback`, it doesn't change, keeping the `AddItem` component from re-rendering unnecessarily, which is confirmed by the `console.log` statement in the `AddItem` component.
+
+### Summary
+
+Using `useCallback` can be a powerful optimization technique in React, especially when dealing with components that rely on reference equality for performance. It ensures that functions are only recreated when necessary, helping to prevent unnecessary rendering and improving the overall efficiency of your application.
 
 ## useMemo Hook
 

@@ -1,3 +1,0 @@
-# Route Protection with Private Routes
-
-Start typing here...

@@ -1,6 +1,6 @@
 # 11. Routing with React Router
 
-React Router DOM v6 is a popular library for handling routing in React applications. It allows developers to create navigation between different pages or views within a single-page application (SPA), manage complex routing logic, and define how components should be rendered based on the current URL.
+[React Router DOM v6](https://reactrouter.com/en/main) is a popular library for handling routing in React applications. It allows developers to create navigation between different pages or views within a single-page application (SPA), manage complex routing logic, and define how components should be rendered based on the current URL.
 
 ### What is React Router DOM v6?
 
@@ -14,291 +14,255 @@ React Router DOM v6 is the latest version of React Router, offering several impr
 - **Route Guards**: Support for protected and private routes, allowing you to control access based on authentication or user roles.
 
 ---
+To update the application using `NavLink` for the navigation bar and setting up routing with `createBrowserRouter` (from `react-router-dom v6.4+`), follow these steps:
 
-### Basic Routing with 3 Pages
+### Step 1: Install Required Packages
 
-Let's start with a simple example of setting up basic routing with three pages: Home, About, and Contact.
-
-#### Step 1: Install React Router DOM
-
-First, install React Router DOM in your project:
+First, make sure you have the latest version of `react-router-dom` that supports `createBrowserRouter` and `RouterProvider`.
 
 ```bash
-npm install react-router-dom@6
+npm install react-router-dom
 ```
 
-#### Step 2: Set Up Basic Routing
+### Step 2: Update Your Project to Use `createBrowserRouter`
 
-Create a simple routing structure with three pages: Home, About, and Contact.
+We will modify the project to use `createBrowserRouter` to define routes and `RouterProvider` to supply these routes to the app.
 
-```tsx
-// App.tsx
+### 1. Create the Page Components
+
+If you haven’t already, create the page components (`Home`, `About`, `Contact`) in the `src/pages` directory.
+
+```Javascript
+// src/pages/Home.jsx
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
-const Home: React.FC = () => <h2>Home Page</h2>;
-const About: React.FC = () => <h2>About Page</h2>;
-const Contact: React.FC = () => <h2>Contact Page</h2>;
-
-const App: React.FC = () => {
-    return (
-        <Router>
-            <nav>
-                <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/about">About</Link></li>
-                    <li><Link to="/contact">Contact</Link></li>
-                </ul>
-            </nav>
-
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/contact" element={<Contact />} />
-            </Routes>
-        </Router>
-    );
+const Home = () => {
+  return (
+    <div className="p-8">
+      <h1 className="text-4xl font-bold text-blue-600">Home Page</h1>
+      <p className="mt-4">Welcome to the home page!</p>
+    </div>
+  );
 };
 
-export default App;
+export default Home;
 ```
 
-### Explanation:
-- **`<Router>`**: Wraps the application and enables routing.
-- **`<Routes>` and `<Route>`**: Define the different routes and their corresponding components.
-- **`<Link>`**: Used to create navigational links that change the URL and render the corresponding component.
-
----
-
-### Complex Routing Example
-
-Let's extend the routing to include a dashboard with nested routes, use `useNavigate` for programmatic navigation, and demonstrate `Link`, `NavLink`, and `Outlet`.
-
-#### Step 1: Define Routes with Nested Structure
-
-```tsx
-// Dashboard.tsx
+```Javascript
+// src/pages/About.jsx
 import React from 'react';
-import { Outlet, Link, NavLink } from 'react-router-dom';
 
-const Dashboard: React.FC = () => {
-    return (
-        <div>
-            <h2>Dashboard</h2>
-            <nav>
-                <ul>
-                    <li><NavLink to="profile" style={({ isActive }) => ({ color: isActive ? 'red' : 'blue' })}>Profile</NavLink></li>
-                    <li><NavLink to="settings">Settings</NavLink></li>
-                </ul>
-            </nav>
-            <Outlet /> {/* Renders the nested routes */}
-        </div>
-    );
+const About = () => {
+  return (
+    <div className="p-8">
+      <h1 className="text-4xl font-bold text-green-600">About Page</h1>
+      <p className="mt-4">This is the about page.</p>
+    </div>
+  );
 };
 
-export default Dashboard;
+export default About;
 ```
 
-```tsx
-// Profile.tsx
+```Javascript
+// src/pages/Contact.jsx
 import React from 'react';
 
-const Profile: React.FC = () => <h3>Profile Page</h3>;
-
-export default Profile;
-```
-
-```tsx
-// Settings.tsx
-import React from 'react';
-
-const Settings: React.FC = () => <h3>Settings Page</h3>;
-
-export default Settings;
-```
-
-#### Step 2: Set Up the Routes in `App.tsx`
-
-```tsx
-// App.tsx
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from 'react-router-dom';
-import Dashboard from './Dashboard';
-import Profile from './Profile';
-import Settings from './Settings';
-import Home from './Home';
-import About from './About';
-import Contact from './Contact';
-
-const App: React.FC = () => {
-    const navigate = useNavigate();
-
-    const handleNavigation = (path: string) => {
-        navigate(path);
-    };
-
-    return (
-        <Router>
-            <nav>
-                <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/about">About</Link></li>
-                    <li><Link to="/contact">Contact</Link></li>
-                    <li><Link to="/dashboard">Dashboard</Link></li>
-                </ul>
-                <button onClick={() => handleNavigation('/about')}>Go to About</button>
-            </nav>
-
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="/dashboard" element={<Dashboard />}>
-                    <Route path="profile" element={<Profile />} />
-                    <Route path="settings" element={<Settings />} />
-                </Route>
-            </Routes>
-        </Router>
-    );
+const Contact = () => {
+  return (
+    <div className="p-8">
+      <h1 className="text-4xl font-bold text-red-600">Contact Page</h1>
+      <p className="mt-4">Feel free to reach out to us!</p>
+    </div>
+  );
 };
 
-export default App;
+export default Contact;
 ```
 
-### Explanation:
-- **Nested Routes**: The `Dashboard` component uses an `Outlet` to render nested routes like `Profile` and `Settings`.
-- **`NavLink`**: A special version of `Link` that adds styling based on whether the link is active.
-- **`useNavigate`**: A hook that allows you to programmatically navigate to a different route.
+```Javascript
+import { useRouteError, isRouteErrorResponse } from 'react-router-dom';
 
-### Step 3: Scroll Restoration
-
-React Router v6 supports scroll restoration automatically, but you can explicitly manage it using the `ScrollRestoration` component.
-
-```tsx
-import { ScrollRestoration } from 'react-router-dom';
-
-// Use ScrollRestoration in your component tree
-const App: React.FC = () => {
-    return (
-        <Router>
-            <ScrollRestoration />
-            {/* Other components and routes */}
-        </Router>
-    );
+// Define a type for possible error shapes
+type RouteError = {
+  statusText?: string;
+  message?: string;
 };
-```
 
----
+function ErrorPage() {
+  const error = useRouteError(); // The error might be of any type
 
-### Protected Routes & Private Routes with Role-Based Routing
+  // Check if the error is a route error response
+  if (isRouteErrorResponse(error)) {
+    return (
+      <div
+        id="error-page"
+        className="flex flex-col items-center justify-center min-h-screen bg-gray-100 text-gray-800"
+      >
+        <h1 className="text-6xl font-bold text-red-600 mb-4">Oops!</h1>
+        <p className="text-lg text-gray-600 mb-2">
+          Sorry, an unexpected error has occurred.
+        </p>
+        <p className="italic text-gray-500">
+          {error.statusText || "Unknown error"}
+        </p>
+      </div>
+    );
+  }
 
-For more advanced applications, you may want to protect certain routes based on user authentication or roles. React Router v6 allows you to create protected routes by wrapping your components with logic that checks for authentication or user roles.
+  // Handle non-route errors (e.g., custom thrown errors)
+  const customError = error as RouteError;
 
-#### Step 1: Create a Protected Route Component
-
-```tsx
-// ProtectedRoute.tsx
-import React from 'react';
-import { Navigate, Outlet } from 'react-router-dom';
-
-interface ProtectedRouteProps {
-    isAuthenticated: boolean;
-    redirectPath?: string;
+  return (
+    <div
+      id="error-page"
+      className="flex flex-col items-center justify-center min-h-screen bg-gray-100 text-gray-800"
+    >
+      <h1 className="text-6xl font-bold text-red-600 mb-4">Oops!</h1>
+      <p className="text-lg text-gray-600 mb-2">
+        Sorry, an unexpected error has occurred.
+      </p>
+      <p className="italic text-gray-500">
+        {customError?.message || "Unknown error"}
+      </p>
+    </div>
+  );
 }
 
-const ProtectedRoute: React.FC<ProtectedRouteProps> = ({ isAuthenticated, redirectPath = '/login' }) => {
-    return isAuthenticated ? <Outlet /> : <Navigate to={redirectPath} replace />;
-};
+export default ErrorPage;
 
-export default ProtectedRoute;
 ```
 
-#### Step 2: Use Protected Route in Your Routing
+### 2. Set Up the Router in `main.jsx`
 
-```tsx
-// App.tsx
+Now, we will define the router using `createBrowserRouter` and use `RouterProvider` to handle the routes.
+
+```Javascript
+// src/main.jsx
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Dashboard from './Dashboard';
-import Home from './Home';
-import About from './About';
-import Login from './Login'; // Create this component
-import ProtectedRoute from './ProtectedRoute';
+import ReactDOM from 'react-dom/client';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import App from './App';
+import Home from './pages/Home';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import './index.css';
 
-const App: React.FC = () => {
-    const isAuthenticated = true; // Example authentication status
+// Define routes using createBrowserRouter
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <App />, // Main layout that holds the Navbar
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: '/',
+        element: <Home />,
+      },
+      {
+        path: 'about',
+        element: <About />,
+      },
+      {
+        path: 'contact',
+        element: <Contact />,
+      },
+    ],
+  },
+]);
 
-    return (
-        <Router>
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/login" element={<Login />} />
-                <Route element={<ProtectedRoute isAuthenticated={isAuthenticated} />}>
-                    <Route path="/dashboard/*" element={<Dashboard />}>
-                        <Route path="profile" element={<Profile />} />
-                        <Route path="settings" element={<Settings />} />
-                    </Route>
-                </Route>
-            </Routes>
-        </Router>
-    );
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>
+);
+```
+
+### 3. Create the `App.jsx` with the Navbar Using `NavLink`
+
+In `App.jsx`, we'll create the main layout that includes the navigation bar with `NavLink` and renders the `Outlet` for nested routes.
+
+```Javascript
+// src/App.jsx
+import React from 'react';
+import { NavLink, Outlet } from 'react-router-dom';
+
+const App = () => {
+  return (
+    <div className="min-h-screen bg-gray-100">
+      {/* Navbar with NavLink */}
+      <nav className="bg-gray-800 text-white p-4">
+        <ul className="flex space-x-4">
+          <li>
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? 'text-blue-400' : 'hover:text-blue-400'
+              }
+            >
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                isActive ? 'text-blue-400' : 'hover:text-blue-400'
+              }
+            >
+              About
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                isActive ? 'text-blue-400' : 'hover:text-blue-400'
+              }
+            >
+              Contact
+            </NavLink>
+          </li>
+        </ul>
+      </nav>
+
+      {/* Main content: Render the nested routes */}
+      <div className="p-8">
+        <Outlet />
+      </div>
+    </div>
+  );
 };
 
 export default App;
 ```
 
-#### Step 3: Role-Based Routing
-
-You can extend the `ProtectedRoute` component to support role-based access.
-
-```tsx
-// RoleBasedRoute.tsx
-import React from 'react';
-import { Navigate, Outlet } from 'react-router-dom';
-
-interface RoleBasedRouteProps {
-    isAuthenticated: boolean;
-    allowedRoles: string[];
-    userRole: string;
-    redirectPath?: string;
-}
-
-const RoleBasedRoute: React.FC<RoleBasedRouteProps> = ({ isAuthenticated, allowedRoles, userRole, redirectPath = '/login' }) => {
-    if (!isAuthenticated) {
-        return <Navigate to={redirectPath} replace />;
-    }
-
-    if (!allowedRoles.includes(userRole)) {
-        return <Navigate to="/unauthorized" replace />; // Unauthorized page
-    }
-
-    return <Outlet />;
-};
-
-export default RoleBasedRoute;
-```
-
-#### Usage Example:
-
-```tsx
-<Route element={<RoleBasedRoute isAuthenticated={isAuthenticated} allowedRoles={['admin']} userRole={userRole} />}>
-    <Route path="/admin" element={<AdminDashboard />} />
-</Route>
-```
-
 ### Explanation:
-- **ProtectedRoute**: A component that wraps around your protected routes to check if a user is authenticated before granting access.
-- **Role-Based Routing**: You can extend the logic to check if a user has the appropriate role before accessing certain routes.
 
----
+- **`NavLink`**: We're using `NavLink` for the navigation bar, which automatically applies an `isActive` class when the route matches the current URL. You can style the active links with a blue color (`text-blue-400`).
 
-### Summary
+- **`createBrowserRouter`**: This is used to define routes. The `App` component acts as a layout, while `Home`, `About`, and `Contact` are nested routes rendered via the `Outlet`.
 
-- **React Router DOM v6**: A powerful library for
+- **`RouterProvider`**: Supplies the router to the app, handling the transitions and route matching.
 
-managing routing in React applications, with support for declarative routing, nested routes, and complex state management.
-- **Basic Routing**: Set up simple navigation between pages using `Routes` and `Route`.
-- **Complex Routing**: Utilize nested routes, `useNavigate`, `Link`, `NavLink`, and `Outlet` for more advanced routing structures.
-- **Scroll Restoration**: Automatically or manually manage scroll positions during navigation.
-- **Protected Routes**: Implement protected and role-based routes to secure parts of your application.
+### 4. Tailwind Styling:
+
+- **Navbar**: The navigation bar is styled using Tailwind CSS (`bg-gray-800`, `text-white`, `p-4`), and hover styles are applied to `NavLink` items (`hover:text-blue-400`).
+- **Active Link**: When a link is active, it's styled with the `text-blue-400` class.
+
+### Step 4: Run the Application
+
+To start your Vite development server, run:
+
+```bash
+npm run dev
+```
+
+Visit [http://localhost:5173](http://localhost:5173) in your browser to see the app. You should be able to navigate between the **Home**, **About**, and **Contact** pages using the navbar.
+
+### Summary:
+
+1. **Router Setup**: Using `createBrowserRouter` and `RouterProvider` to manage routing.
+2. **Navbar with `NavLink`**: Created a responsive navigation bar that highlights active routes.
+3. **Page Components**: `Home`, `About`, and `Contact` components are rendered based on the route.
+4. **Tailwind CSS**: Used Tailwind for styling the layout and active/inactive states of the navigation links.

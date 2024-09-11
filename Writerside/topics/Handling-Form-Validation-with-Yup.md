@@ -1,3 +1,0 @@
-# Handling Form Validation with Yup
-
-Start typing here...

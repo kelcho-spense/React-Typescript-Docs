@@ -185,4 +185,40 @@
         </description>
         <accepts>React-memo-for-Component-Optimization.html</accepts>
     </rule>
+    <rule id="779fac4">
+        <description>Created after removal of "Setting Up React Router" from React-TypeScript</description>
+        <accepts>Setting-Up-React-Router.html</accepts>
+    </rule>
+    <rule id="159aea7b">
+        <description>Created after removal of "Basic Routing Concepts" from React-TypeScript</description>
+        <accepts>Basic-Routing-Concepts.html</accepts>
+    </rule>
+    <rule id="5b920d80">
+        <description>Created after removal of "Handling 404 Pages" from React-TypeScript</description>
+        <accepts>Handling-404-Pages.html</accepts>
+    </rule>
+    <rule id="24f07ab2">
+        <description>Created after removal of "Route Protection with Private Routes" from React-TypeScript</description>
+        <accepts>Route-Protection-with-Private-Routes.html</accepts>
+    </rule>
+    <rule id="6b08654a">
+        <description>Created after removal of "Nested Routes and URL Parameters" from React-TypeScript</description>
+        <accepts>Nested-Routes-and-URL-Parameters.html</accepts>
+    </rule>
+    <rule id="12b96b54">
+        <description>Created after removal of "Why Use React Hook Form?" from React-TypeScript</description>
+        <accepts>Why-Use-React-Hook-Form.html</accepts>
+    </rule>
+    <rule id="29053074">
+        <description>Created after removal of "Setting Up React Hook Form" from React-TypeScript</description>
+        <accepts>Setting-Up-React-Hook-Form.html</accepts>
+    </rule>
+    <rule id="7ce7b764">
+        <description>Created after removal of "Handling Form Validation with Yup" from React-TypeScript</description>
+        <accepts>Handling-Form-Validation-with-Yup.html</accepts>
+    </rule>
+    <rule id="1bf8c39">
+        <description>Created after removal of "all" from React-TypeScript</description>
+        <accepts>all.html</accepts>
+    </rule>
 </rules>

@@ -1,3 +1,0 @@
-# Setting Up React Hook Form
-
-Start typing here...

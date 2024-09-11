@@ -1,3 +1,0 @@
-# Why Use React Hook Form?
-
-Start typing here...

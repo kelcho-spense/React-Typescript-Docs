@@ -61,21 +61,14 @@
         </toc-element>
     </toc-element>
     <toc-element topic="10-useContextHook.md"/>
+    <toc-element topic="10-React-Styling.md">
+        <toc-element topic="Getting-started-with-Tailwind.md"/>
+        <toc-element topic="Tailwind-CSS-Layouts.md"/>
+    </toc-element>
     <toc-element topic="8-Routing-with-React-Router.md">
-        <toc-element topic="Setting-Up-React-Router.md"/>
-        <toc-element topic="Basic-Routing-Concepts.md"/>
-        <toc-element topic="Nested-Routes-and-URL-Parameters.md"/>
-        <toc-element topic="Route-Protection-with-Private-Routes.md">
-        </toc-element>
-        <toc-element topic="Handling-404-Pages.md"/>
     </toc-element>
     <toc-element topic="10-Form-Management-with-React-Hook-Form-Yup.md">
-        <toc-element topic="Why-Use-React-Hook-Form.md">
-        </toc-element>
-        <toc-element topic="Setting-Up-React-Hook-Form.md"/>
-        <toc-element topic="Handling-Form-Validation-with-Yup.md"/>
     </toc-element>
-    <toc-element topic="10-React-Styling.md"/>
     <toc-element topic="11-Best-Practices-and-Common-Pitfalls.md">
         <toc-element topic="Code-Structuring.md">
             <toc-element topic="Organizing-Files-and-Folders.md"/>
@@ -93,5 +86,4 @@
         <toc-element topic="Handling-Asynchronous-Actions.md"/>
         <toc-element topic="RTK-Query-for-Data-Fetching.md"/>
     </toc-element>
-    <toc-element topic="all.md"/>
 </instance-profile>

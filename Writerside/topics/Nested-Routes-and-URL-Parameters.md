@@ -1,3 +1,0 @@
-# Nested Routes and URL Parameters
-
-Start typing here...

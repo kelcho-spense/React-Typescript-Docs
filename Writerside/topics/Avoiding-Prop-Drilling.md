@@ -19,7 +19,7 @@ Prop drilling occurs when you pass props from a parent component down to child c
 
 ### Example of Prop Drilling
 
-```typescript
+```javascript
 import React from 'react';
 
 const GreatGrandchild: React.FC<{ user: string }> = ({ user }) => {
@@ -60,7 +60,7 @@ The Context API provides a way to share data between components without having t
 
 #### Example: Using the Context API
 
-```typescript
+```javascript
 import React, { createContext, useContext } from 'react';
 
 // Create a Context
@@ -101,7 +101,7 @@ Redux provides a single source of truth for your application's state. Components
 
 #### Example: Using Redux to Avoid Prop Drilling
 
-```typescript
+```javascript
 import React from 'react';
 import { createStore } from 'redux';
 import { Provider, useSelector, useDispatch } from 'react-redux';
@@ -171,7 +171,7 @@ Design your components to be more independent and capable of receiving necessary
 
 #### Example: Component Composition
 
-```typescript
+```javascript
 import React from 'react';
 
 const UserDetail: React.FC<{ user: string }> = ({ user }) => {

@@ -20,7 +20,7 @@ It returns an array with two elements:
 
 Here's a simple example using `useReducer` in TypeScript to manage a counter:
 
-```typescript
+```javascript
 import React, { useReducer } from 'react';
 
 // Define the types for the state and actions
@@ -66,7 +66,7 @@ export default Counter;
 
 `useReducer` excels in scenarios where your state is an object or when managing multiple related state values. Here’s an example of managing form state:
 
-```typescript
+```javascript
 import React, { useReducer } from 'react';
 
 // Define the types for the state and actions
@@ -151,7 +151,7 @@ export default FormComponent;
 
 While `useReducer` itself doesn’t handle asynchronous logic, you can manage it by using `useEffect` alongside `useReducer`. Here's an example that simulates a fetch request:
 
-```typescript
+```javascript
 import React, { useReducer, useEffect } from 'react';
 
 interface DataState {

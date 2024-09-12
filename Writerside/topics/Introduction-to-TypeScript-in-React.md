@@ -1,4 +1,4 @@
-# Introduction to TypeScript in React
+# 1.3 Introduction to TypeScript in React
 
 
 ![React TypeScript](React_TypeScript.png)

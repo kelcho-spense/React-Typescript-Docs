@@ -1,4 +1,4 @@
-# Vite vs CRA
+# 1.6.2 Vite vs CRA
 
 ![Vite Vs CRA](vite.png)
 The preferred way between **Create React App (CRA)** and **Vite** depends on your specific needs and preferences:

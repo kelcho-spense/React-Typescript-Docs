@@ -24,7 +24,7 @@ Hooks address these issues by allowing you to:
 
 1. **`useState`**: Manages state in a functional component.
 
-```typescript
+```javascript
 import React, { useState } from 'react';
 
 const Counter: React.FC = () => {
@@ -43,7 +43,7 @@ export default Counter;
 
 2. **`useEffect`**: Manages side effects, such as data fetching or manually updating the DOM.
 
-```typescript
+```javascript
 import React, { useState, useEffect } from 'react';
 
 const DataFetcher: React.FC = () => {
@@ -67,7 +67,7 @@ export default DataFetcher;
 
 3. **`useContext`**: Allows you to access React's context API within functional components.
 
-```typescript
+```javascript
 import React, { useContext } from 'react';
 
 const ThemeContext = React.createContext('light');
@@ -96,7 +96,7 @@ React relies on the order of Hook calls to associate them with the correct `useS
 
 #### Example of Incorrect Usage:
 
-```typescript
+```javascript
 import React, { useState, useEffect } from 'react';
 
 const ConditionalHook: React.FC = () => {
@@ -131,7 +131,7 @@ This rule ensures that all stateful logic is associated with a component or a cu
 
 #### Example of Correct Usage:
 
-```typescript
+```javascript
 import React, { useState } from 'react';
 
 // Custom Hook that follows the Rules of Hooks
@@ -164,7 +164,7 @@ export default ToggleComponent;
 
 - **Dependency Arrays in `useEffect`**: Always specify all dependencies that the effect relies on. This ensures the effect runs only when necessary.
 
-```typescript
+```javascript
 useEffect(() => {
     // Some side effect
 }, [dependency1, dependency2]); // Correct dependencies to prevent unnecessary re-renders

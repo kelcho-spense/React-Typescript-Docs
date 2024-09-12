@@ -221,4 +221,46 @@
         <description>Created after removal of "all" from React-TypeScript</description>
         <accepts>all.html</accepts>
     </rule>
+    <rule id="7392a136">
+        <description>Created after removal of "Centralized State Management" from React-TypeScript</description>
+        <accepts>Centralized-State-Management.html</accepts>
+    </rule>
+    <rule id="52d6779f">
+        <description>Created after removal of "Benefits of Redux" from React-TypeScript</description>
+        <accepts>Benefits-of-Redux.html</accepts>
+    </rule>
+    <rule id="6df11fb7">
+        <description>Created after removal of "Introduction to Redux" from React-TypeScript</description>
+        <accepts>Introduction-to-Redux.html</accepts>
+    </rule>
+    <rule id="15ec05b5">
+        <description>Created after removal of "What is JSX?" from React-TypeScript</description>
+        <accepts>What-is-JSX.html</accepts>
+    </rule>
+    <rule id="48defd6b">
+        <description>Created after removal of "Memoization in React" from React-TypeScript</description>
+        <accepts>Memoization-in-React.html</accepts>
+    </rule>
+    <rule id="12c5a3f7">
+        <description>Created after removal of "Code Structuring" from React-TypeScript</description>
+        <accepts>Code-Structuring.html</accepts>
+    </rule>
+    <rule id="1df38eab">
+        <description>Created after removal of "Organizing Files and Folders" from React-TypeScript</description>
+        <accepts>Organizing-Files-and-Folders.html</accepts>
+    </rule>
+    <rule id="4fd71732">
+        <description>Created after removal of "Naming Conventions and Best Practices" from React-TypeScript
+        </description>
+        <accepts>Naming-Conventions-and-Best-Practices.html</accepts>
+    </rule>
+    <rule id="5c9ec253">
+        <description>Created after removal of "Avoiding Common Mistakes" from React-TypeScript</description>
+        <accepts>Avoiding-Common-Mistakes.html</accepts>
+    </rule>
+    <rule id="40abfe65">
+        <description>Created after removal of "12. Best Practices and Common Pitfalls" from React-TypeScript
+        </description>
+        <accepts>11-Best-Practices-and-Common-Pitfalls.html</accepts>
+    </rule>
 </rules>

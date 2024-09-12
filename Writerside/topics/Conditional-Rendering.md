@@ -10,7 +10,7 @@ The most straightforward way to conditionally render content in React is by usin
 
 The ternary operator is a concise way to conditionally render one of two possible outputs.
 
-```typescript
+```javascript
 import React, { useState } from 'react';
 
 const TernaryExample: React.FC = () => {
@@ -40,7 +40,7 @@ export default TernaryExample;
 
 The `&&` operator can be used to render content only when a condition is true.
 
-```typescript
+```javascript
 import React, { useState } from 'react';
 
 const AndOperatorExample: React.FC = () => {
@@ -68,7 +68,7 @@ When conditions are more complex, or when you need to render multiple elements b
 
 ### 3. Using `if-else` Statements
 
-```typescript
+```javascript
 import React, { useState } from 'react';
 
 const IfElseExample: React.FC = () => {
@@ -106,7 +106,7 @@ export default IfElseExample;
 
 When you have many possible states, a `switch` statement can be a more readable alternative to multiple `if-else` conditions.
 
-```typescript
+```javascript
 import React, { useState } from 'react';
 
 const SwitchExample: React.FC = () => {
@@ -147,7 +147,7 @@ export default SwitchExample;
 
 When handling multiple states, using TypeScript’s union types can help ensure that you cover all possible cases. This is particularly useful in complex components.
 
-```typescript
+```javascript
 type Status = 'loading' | 'success' | 'error';
 
 const Example: React.FC = () => {
@@ -176,7 +176,7 @@ const Example: React.FC = () => {
 
 Use conditional rendering to avoid rendering unnecessary elements. This can improve performance, especially when dealing with large or complex UIs.
 
-```typescript
+```javascript
 const Example: React.FC<{ isVisible: boolean }> = ({ isVisible }) => {
     return (
         <div>
@@ -190,7 +190,7 @@ const Example: React.FC<{ isVisible: boolean }> = ({ isVisible }) => {
 
 TypeScript will help ensure that all paths in your conditional logic return valid JSX. Make sure that your components don't return `undefined` or other invalid values.
 
-```typescript
+```javascript
 const Example: React.FC<{ condition: boolean }> = ({ condition }) => {
     return (
         <div>
@@ -204,7 +204,7 @@ const Example: React.FC<{ condition: boolean }> = ({ condition }) => {
 
 If a condition results in rendering nothing, use an empty fragment `<>...</>` or `null` to make it explicit that no content will be rendered.
 
-```typescript
+```javascript
 const Example: React.FC<{ condition: boolean }> = ({ condition }) => {
     return (
         <div>
@@ -216,7 +216,7 @@ const Example: React.FC<{ condition: boolean }> = ({ condition }) => {
 
 Alternatively, you can use an empty fragment:
 
-```typescript
+```javascript
 const Example: React.FC<{ condition: boolean }> = ({ condition }) => {
     return (
         <div>
@@ -230,7 +230,7 @@ const Example: React.FC<{ condition: boolean }> = ({ condition }) => {
 
 If you're using default props in your components, ensure that your conditional rendering logic considers the default values, as TypeScript will type-check based on these defaults.
 
-```typescript
+```javascript
 type ExampleProps = {
     isVisible?: boolean;
 };
@@ -248,7 +248,7 @@ const Example: React.FC<ExampleProps> = ({ isVisible = false }) => {
 
 When dealing with complex conditional rendering, consider using early returns in your function to simplify the logic.
 
-```typescript
+```javascript
 const Example: React.FC<{ isLoading: boolean; hasError: boolean }> = ({
     isLoading,
     hasError,

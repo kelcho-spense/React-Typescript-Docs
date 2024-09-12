@@ -58,7 +58,7 @@ Certainly! Here's how you can implement the same pure component with counting fu
 
 ### **Code Example 2 :**
 
-```typescript
+```javascript
 import React, { useState } from 'react';
 
 const PureComponent: React.FC = () => {

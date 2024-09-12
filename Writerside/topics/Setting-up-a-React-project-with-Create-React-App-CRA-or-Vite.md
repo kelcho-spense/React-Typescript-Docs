@@ -1,4 +1,4 @@
-# Creating React with Vite
+# 1.6 Creating React with Vite
 
 - All ways to get started with React
 

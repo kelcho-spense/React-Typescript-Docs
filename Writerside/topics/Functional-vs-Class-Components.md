@@ -139,7 +139,7 @@ Class components are one of the fundamental ways to define components in React. 
 
 Here’s a simple example of a counter implemented as a class component in React with TypeScript:
 
-```typescript
+```javascript
 import React, { Component } from 'react';
 
 // Define the state interface

@@ -1,4 +1,4 @@
-# Thinking in React
+# 1.2 Thinking in React
 
 "Thinking in React" is a concept that describes the process of designing and building user interfaces with React.js. It emphasizes breaking down the UI into components, managing data flow, and structuring the application in a way that aligns with React's component-based architecture. Here’s a concise breakdown:
 

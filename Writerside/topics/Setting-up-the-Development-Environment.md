@@ -1,4 +1,4 @@
-# Setting up the Development Environment
+# 1.5 Setting up the Development Environment
 
 ![NPM vs Yarn vs PNPM](NPM vs Yarn vs PNPM.png)
 

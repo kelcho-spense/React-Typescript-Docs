@@ -19,7 +19,7 @@ A custom hook is essentially a JavaScript function whose name starts with `use` 
 
 The `useLocalStorage` hook allows you to synchronize a state variable with `localStorage`, so that the state persists even when the page is refreshed.
 
-```typescript
+```javascript
 import { useState } from 'react';
 
 function useLocalStorage<T>(key: string, initialValue: T) {
@@ -79,7 +79,7 @@ export default ExampleComponent;
 
 The `useFetch` hook abstracts away the logic for making an HTTP request and managing the corresponding loading, error, and data states.
 
-```typescript
+```javascript
 import { useState, useEffect } from 'react';
 
 interface FetchState<T> {

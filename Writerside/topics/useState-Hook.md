@@ -17,7 +17,7 @@ The `useState` hook returns an array with two elements:
 
 Here's how you might use `useState` in a simple TypeScript example:
 
-```typescript
+```javascript
 import React, { useState } from 'react';
 
 const Counter: React.FC = () => {
@@ -43,7 +43,7 @@ export default Counter;
 
 You can use `useState` to manage more complex states like objects. Here's an example with an object representing a form input:
 
-```typescript
+```javascript
 import React, { useState } from 'react';
 
 interface User {
@@ -82,7 +82,7 @@ export default UserForm;
 
 You can also use `useState` to manage arrays. Here's an example:
 
-```typescript
+```javascript
 import React, { useState } from 'react';
 
 const TodoList: React.FC = () => {
@@ -115,7 +115,7 @@ export default TodoList;
 
 State updates made with `useState` are asynchronous. Here's an example demonstrating this concept:
 
-```typescript
+```javascript
 import React, { useState } from 'react';
 
 const AsyncCounter: React.FC = () => {
@@ -146,7 +146,7 @@ export default AsyncCounter;
 
 Sometimes, calculating the initial state value is expensive, or it depends on other props or external factors. In such cases, you can pass a function to `useState` that computes the initial state only on the first render:
 
-```typescript
+```javascript
 import React, { useState } from 'react';
 
 const ExpensiveInitialState: React.FC = () => {

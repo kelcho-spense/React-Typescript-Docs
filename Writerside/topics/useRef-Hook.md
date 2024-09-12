@@ -8,7 +8,7 @@ The `useRef` hook returns a mutable `ref` object with a `.current` property that
 
 ### Basic Syntax
 
-```typescript
+```javascript
 import React, { useRef } from 'react';
 
 const ExampleComponent: React.FC = () => {
@@ -30,7 +30,7 @@ One of the primary uses of `useRef` is to directly interact with DOM elements, e
 
 ### Example: Focusing an Input Element
 
-```typescript
+```javascript
 import React, { useRef } from 'react';
 
 const FocusInput: React.FC = () => {
@@ -63,7 +63,7 @@ export default FocusInput;
 
 ### Example: Persisting a Timer Value
 
-```typescript
+```javascript
 import React, { useState, useRef, useEffect } from 'react';
 
 const Timer: React.FC = () => {
@@ -111,7 +111,7 @@ export default Timer;
 
 ### Example: Counting Component Renders
 
-```typescript
+```javascript
 import React, { useState, useRef, useEffect } from 'react';
 
 const RenderCounter: React.FC = () => {
@@ -147,7 +147,7 @@ While `useRef` is powerful, it should not be used as a replacement for `useState
 
 When creating refs for DOM elements, always initialize them with `null` to avoid TypeScript errors.
 
-```typescript
+```javascript
 const inputRef = useRef<HTMLInputElement>(null);
 ```
 
@@ -155,7 +155,7 @@ const inputRef = useRef<HTMLInputElement>(null);
 
 If your ref holds an interval, timeout, or subscription, always ensure you clean it up in the cleanup function of `useEffect`.
 
-```typescript
+```javascript
 useEffect(() => {
     // Setup code...
     return () => {
@@ -170,7 +170,7 @@ useEffect(() => {
 
 When passing functions that use refs as props to child components, consider wrapping them in `useCallback` to prevent unnecessary re-renders.
 
-```typescript
+```javascript
 import React, { useRef, useCallback } from 'react';
 
 const ParentComponent: React.FC = () => {
@@ -194,7 +194,7 @@ const ChildComponent: React.FC<{ onFocusInput: () => void }> = ({ onFocusInput }
 
 When working with `useRef`, always specify the type to ensure type safety. For DOM elements, use the corresponding `HTML` type.
 
-```typescript
+```javascript
 const divRef = useRef<HTMLDivElement>(null);
 ```
 

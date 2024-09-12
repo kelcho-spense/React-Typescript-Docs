@@ -10,7 +10,7 @@ In React, events are handled using a declarative approach. Instead of using trad
 
 Let's start with a simple example of handling a button click event:
 
-```typescript
+```javascript
 import React from 'react';
 
 const ClickButton: React.FC = () => {
@@ -34,7 +34,7 @@ Often, you need to pass additional parameters to event handlers. This can be don
 
 ### Example: Passing Parameters to Event Handlers
 
-```typescript
+```javascript
 import React from 'react';
 
 const ParameterButton: React.FC = () => {
@@ -62,7 +62,7 @@ React provides several built-in event handlers that cover a wide range of user i
 
 ### 1. `onClick`: Handling Click Events
 
-```typescript
+```javascript
 import React from 'react';
 
 const ClickExample: React.FC = () => {
@@ -78,7 +78,7 @@ export default ClickExample;
 
 ### 2. `onChange`: Handling Input Change Events
 
-```typescript
+```javascript
 import React, { useState } from 'react';
 
 const InputChangeExample: React.FC = () => {
@@ -96,7 +96,7 @@ export default InputChangeExample;
 
 ### 3. `onSubmit`: Handling Form Submission
 
-```typescript
+```javascript
 import React, { useState } from 'react';
 
 const FormSubmitExample: React.FC = () => {
@@ -152,7 +152,7 @@ Keyboard events are essential when you want to capture user input via the keyboa
 
 The `onKeyDown` event occurs when the user presses a key on the keyboard.
 
-```typescript
+```javascript
 import React, { useState } from 'react';
 
 const KeyDownExample: React.FC = () => {
@@ -181,7 +181,7 @@ export default KeyDownExample;
 
 The `onKeyUp` event occurs when the user releases a key on the keyboard.
 
-```typescript
+```javascript
 import React, { useState } from 'react';
 
 const KeyUpExample: React.FC = () => {
@@ -210,7 +210,7 @@ export default KeyUpExample;
 
 You can handle specific keys by checking the `event.key` value inside the event handler.
 
-```typescript
+```javascript
 import React from 'react';
 
 const EnterKeyExample: React.FC = () => {
@@ -237,7 +237,7 @@ Scroll events are useful for detecting when the user scrolls within an element o
 
 The `onScroll` event is triggered when an element is scrolled.
 
-```typescript
+```javascript
 import React, { useState } from 'react';
 
 const ScrollExample: React.FC = () => {
@@ -271,7 +271,7 @@ export default ScrollExample;
 
 You can also handle scroll events for the entire window. This is useful for detecting how far down a user has scrolled on the page.
 
-```typescript
+```javascript
 import React, { useEffect, useState } from 'react';
 
 const WindowScrollExample: React.FC = () => {

@@ -16,7 +16,7 @@ Setting up `useContext` involves creating a context, providing a value for that 
 
 First, you need to create a context using the `createContext` function. This context will hold the data or functions that you want to share across components.
 
-```typescript
+```javascript
 import React, { createContext } from 'react';
 
 // Create a context with a default value (optional)
@@ -29,7 +29,7 @@ export default MyContext;
 
 Next, you'll need a provider component that wraps the parts of your application that need access to the context. The provider component will supply the value for the context.
 
-```typescript
+```javascript
 import React, { useState } from 'react';
 import MyContext from './MyContext';
 
@@ -54,7 +54,7 @@ export default MyProvider;
 
 Finally, you can consume the context value in any component that is a child of the provider by using the `useContext` hook.
 
-```typescript
+```javascript
 import React, { useContext } from 'react';
 import MyContext from './MyContext';
 
@@ -74,7 +74,7 @@ export default MyComponent;
 
 To make the context available to all components that need it, wrap the root component (or a part of your component tree) with the provider component.
 
-```typescript
+```javascript
 import React from 'react';
 import ReactDOM from 'react-dom';
 import MyProvider from './MyProvider';
@@ -95,7 +95,7 @@ ReactDOM.render(<App />, document.getElementById('root'));
 
 Let's see all the pieces together in a full example.
 
-```typescript
+```javascript
 // MyContext.tsx
 import { createContext } from 'react';
 
@@ -173,7 +173,7 @@ In this example, we will create a simple user authentication system using `useCo
 
 ### Step 1: Create a Context and a Provider Component
 
-```typescript
+```javascript
 import React, { createContext, useState, useContext, ReactNode } from 'react';
 
 // Define the shape of the user context
@@ -210,7 +210,7 @@ export default UserProvider;
 
 ### Step 2: Create Components to Consume the Context
 
-```typescript
+```javascript
 import React from 'react';
 import { useContext } from 'react';
 import UserProvider, { UserContext } from './UserProvider';
@@ -279,7 +279,7 @@ In this example, we'll manage a more complex state, such as a todo list, using `
 
 ### Step 1: Create a Context, Reducer, and a Provider Component
 
-```typescript
+```javascript
 import React, { createContext, useReducer, useContext, ReactNode } from 'react';
 
 // Define the shape of a todo item
@@ -347,7 +347,7 @@ export default TodoProvider;
 
 ### Step 2: Create Components to Consume the Context
 
-```typescript
+```javascript
 import React, { useState } from 'react';
 import { useContext } from 'react';
 import TodoProvider, { TodoContext } from './TodoProvider';

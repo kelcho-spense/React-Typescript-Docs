@@ -1,4 +1,4 @@
-# PnPm Cheatsheet
+# 1.5.2 PnPm Cheatsheet
 
 Here's a cheat sheet for using PNPM to perform common tasks. PNPM is a fast and efficient package manager for Node.js projects, and this guide will help you get started with some of the most frequently used commands.
 

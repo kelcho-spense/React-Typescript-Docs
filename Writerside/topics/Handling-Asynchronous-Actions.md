@@ -1,4 +1,4 @@
-# Handling Asynchronous Actions
+# Redux Thunk - Handling Asynchronous Actions
 ### **Redux Toolkit (Thunk)**
 
 In many applications, we need to perform asynchronous operations such as fetching data from an API, posting data to a server, or dealing with side effects like authentication and file uploads. Redux Toolkit provides a simple and powerful way to handle these scenarios through **thunks**, which are async functions that dispatch actions.

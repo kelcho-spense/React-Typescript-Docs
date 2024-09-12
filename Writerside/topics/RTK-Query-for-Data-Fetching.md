@@ -1,4 +1,4 @@
-# RTK Query for Data Fetching
+# RTK Query - Data Fetching
 
 ### **What is RTK Query?**
 

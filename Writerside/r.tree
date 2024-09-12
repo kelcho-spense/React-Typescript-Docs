@@ -69,11 +69,17 @@
     <toc-element topic="12-React-Folder-Structure.md"/>
     <toc-element topic="12-Advanced-State-Management-with-Redux-Toolkit.md">
         <toc-element topic="Setting-Up-Redux-Toolkit.md"/>
-        <toc-element topic="Handling-Asynchronous-Actions.md"/>
-        <toc-element topic="End2End-React-ReduxThunk-ExpressMongoDb-Posts-CRUD-APP.md"/>
+        <toc-element topic="Handling-Asynchronous-Actions.md">
+            <toc-element topic="1End2End-React-ReduxThunk-ExpressMongoDb-Posts-CRUD-APP.md"/>
+        </toc-element>
         <toc-element topic="RTK-Query-for-Data-Fetching.md">
             <toc-element topic="RTK-Query-Vs-Redux-Thunk.md"/>
             <toc-element topic="End2End-React-RTK-Query-ExpressMongoDb-Posts-CRUD-APP.md"/>
         </toc-element>
+    </toc-element>
+    <toc-element topic="Advanced-State-Management-with-Zustand.md">
+        <toc-element topic="15-1-Counter-Example.md"/>
+        <toc-element topic="End2End-React-Zustand-ExpressMongoDb-Posts-CRUD-APP.md"/>
+        <toc-element topic="15-3-End2End-React-Zustand-ReactQuery-ExpressMongoDb-Posts-CRUD-APP.md"/>
     </toc-element>
 </instance-profile>

@@ -263,4 +263,12 @@
         </description>
         <accepts>11-Best-Practices-and-Common-Pitfalls.html</accepts>
     </rule>
+    <rule id="44c49b77">
+        <description>Created after removal of "Thunk ExpressMongoDb Posts CRUD APP" from React-TypeScript</description>
+        <accepts>End2End-React-ReduxThunk-ExpressMongoDb-Posts-CRUD-APP.html</accepts>
+    </rule>
+    <rule id="5fe8442d">
+        <description>Created after removal of "15.2 TodoApp Example" from React-TypeScript</description>
+        <accepts>TodoApp-Example.html</accepts>
+    </rule>
 </rules>

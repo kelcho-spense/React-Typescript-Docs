@@ -80,6 +80,5 @@
     <toc-element topic="Advanced-State-Management-with-Zustand.md">
         <toc-element topic="15-1-Counter-Example.md"/>
         <toc-element topic="End2End-React-Zustand-ExpressMongoDb-Posts-CRUD-APP.md"/>
-        <toc-element topic="15-3-End2End-React-Zustand-ReactQuery-ExpressMongoDb-Posts-CRUD-APP.md"/>
     </toc-element>
 </instance-profile>

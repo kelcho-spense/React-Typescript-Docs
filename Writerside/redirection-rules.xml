@@ -271,4 +271,10 @@
         <description>Created after removal of "15.2 TodoApp Example" from React-TypeScript</description>
         <accepts>TodoApp-Example.html</accepts>
     </rule>
+    <rule id="1f1c49e0">
+        <description>Created after removal of "15.3 End2End: React Zustand ReactQuery ExpressMongoDb Posts CRUD APP"
+            from React-TypeScript
+        </description>
+        <accepts>15-3-End2End-React-Zustand-ReactQuery-ExpressMongoDb-Posts-CRUD-APP.html</accepts>
+    </rule>
 </rules>

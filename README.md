@@ -113,15 +113,7 @@ Here is the course outline for a React.js and TypeScript documentation
    - Dynamic Forms
    - Handling Form Submissions
 
-#### **11. Deploying React Applications**
-- **Preparing for Deployment**
-   - Optimizing Your React App for Production
-   - Managing Environment Variables
-- **Deployment Strategies**
-   - Deploying to Vercel, Netlify, and Azure
-   - Continuous Integration/Continuous Deployment (CI/CD) with GitHub Actions
-
-#### **12. Best Practices and Common Pitfalls**
+#### **11. Best Practices and Common Pitfalls**
 - **Code Structuring**
    - Organizing Files and Folders
    - Naming Conventions and Best Practices
@@ -130,7 +122,7 @@ Here is the course outline for a React.js and TypeScript documentation
    - Ensuring Performance Optimization
    - Handling Errors Gracefully
 
-#### **13. Conclusion**
+#### **12. Conclusion**
 - Recap of Key Concepts
 - Further Learning Resources
 - Next Steps in React and TypeScript Mastery
